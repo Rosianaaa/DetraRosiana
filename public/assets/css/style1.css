@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  display: flex;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: rgb(246, 175, 255);
+}
+.login-form{
+  position: relative;
+  width: 400px;
+  height: auto;
+  background: #ff8ff6;
+  padding: 40px 35px 60px;
+  box-sizing: border-box;
+  /* border: 1px solid rgb(255, 255, 255); */
+  border-radius: 5px;
+  box-shadow: inset 0 0 1px #ffffff;
+}
+.text{
+  font-size: 30px;
+  color: #666666;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+form{
+  margin-top: 30px;
+}
+form .field{
+  margin-top: 20px;
+  display: flex;
+}
+.field .fas{
+  height: 50px;
+  width: 60px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  line-height: 50px;
+  border: 1px solid #ffffff;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  background: linear-gradient(#ffffff,#ffffff);
+}
+.field input,form button{
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 19px;
+  color: rgb(97, 97, 97);
+  padding: 0 15px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #fff9f9;
+  caret-color: #99338b;
+  background: linear-gradient(#ffffff,#ffffff);
+}
+input:focus{
+  color: rgb(246, 175, 255);
+  box-shadow: 0 0 5px  #eb42dd,
+              inset 0 0 5px rgba(0,255,0,.1);
+  background: linear-gradient(#ffffff,#ffffff);
+  animation: glow .8s ease-out infinite alternate;
+}
+@keyframes glow {
+   0%{
+    border-color: rgb(238, 113, 255);
+    box-shadow: 0 0 5px rgba(0,255,0,.2),
+                inset 0 0 5px rgba(255, 255, 255, 0.1);
+  }
+   100%{
+    border-color: rgb(240, 124, 255);
+    box-shadow: 0 0 20px rgb(242, 145, 255),
+                inset 0 0 10px rgb(241, 134, 255);
+  }
+}
+button{
+  margin-top: 30px;
+  border-radius: 5px!important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+button:hover{
+  color:  rgb(235, 80, 255);
+  border: 1px solid rgb(246, 175, 255);
+  box-shadow: 0 0 5px rgb(242, 166, 252),
+              0 0 10px rgb(245, 166, 255),
+              0 0 15px rgb(241, 137, 255),
+              0 2px 0 rgb(255, 255, 255);
+}
+.link{
+  margin-top: 25px;
+  color: #575757;
+}
+.link a{
+  color: rgb(225, 0, 255);
+  text-decoration: none;
+}
+.link a:hover{
+  text-decoration: underline;
+}
